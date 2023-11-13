@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
 namespace QL_KHOnl_CF.Models
 {
+    [Table("CART_OF_USER")]
     public class CART_OF_USER
     {
         [Key]

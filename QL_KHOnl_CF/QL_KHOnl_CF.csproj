@@ -248,6 +248,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CourseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TypeCourseController.cs" />
     <Compile Include="Global.asax.cs">
@@ -256,6 +257,10 @@
     <Compile Include="Migrations\202311131256300_FixDB.cs" />
     <Compile Include="Migrations\202311131256300_FixDB.designer.cs">
       <DependentUpon>202311131256300_FixDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202311131516452_changeNameTable.cs" />
+    <Compile Include="Migrations\202311131516452_changeNameTable.designer.cs">
+      <DependentUpon>202311131516452_changeNameTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ASSIGNMENTS.cs" />
@@ -313,6 +318,7 @@
     <Content Include="Views\Shared\Header.cshtml" />
     <Content Include="Views\TypeCourse\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Course\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -326,6 +332,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202311131256300_FixDB.resx">
       <DependentUpon>202311131256300_FixDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311131516452_changeNameTable.resx">
+      <DependentUpon>202311131516452_changeNameTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

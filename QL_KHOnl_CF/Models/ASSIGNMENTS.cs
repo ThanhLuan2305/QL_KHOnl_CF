@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
 namespace QL_KHOnl_CF.Models
 {
+    [Table("ASSIGNMENTS")]
     public class ASSIGNMENTS
     {
-
         [Key]
         public string ASSIGNMENTID { get; set; }
         public string ID_COURSE { get; set; }

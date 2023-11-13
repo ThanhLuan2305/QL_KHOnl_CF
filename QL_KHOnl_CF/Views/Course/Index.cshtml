@@ -1,0 +1,52 @@
+﻿@model IEnumerable<QL_KHOnl_CF.Models.COURSE>
+
+@{
+    ViewBag.Title = "Course";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<div class="all-title-box">
+    <div class="container text-center">
+        <h1>Course Grid 3<span class="m_1">Lorem Ipsum dolroin gravida nibh vel velit.</span></h1>
+    </div>
+</div>
+<table class="table">
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_TYPECOURSE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_TEACHER)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NAME_COURSE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DESCRIPTION_COURSE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PRICE_COURSE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.STATUS_COURSE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.THUMBNAIL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.COUNT_LESSON_COURSE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LEVEL_COURSE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CREATED_AT_COURSE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UPDATE_AT_COURSE)
+        </td>
+    </tr>
+}
+
+</table>
